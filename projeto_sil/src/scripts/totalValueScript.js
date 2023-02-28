@@ -12,6 +12,9 @@ values.forEach(vls => {
 
         vls.querySelector(".value").textContent = parseInt(invaidNumber).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
+        const collection = document.getElementsByClassName("values");
+        collection[3].style.color = "red";
+
         var sum = invaidNumber * quantity;
         return vls.querySelector(".totalValue").textContent = sum.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
     }
