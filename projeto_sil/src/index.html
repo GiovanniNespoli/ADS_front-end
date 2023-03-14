@@ -70,10 +70,28 @@
                     </tr>
                 </table>
             </section>
+            <section id="addProduct">
+                <div>
+                    <h1>Lista de encomendas</h1>
+                    <div id="line"></div>
+                </div>
+                <form action="">
+                    <div>
+                        <input id="name" class="input" placeholder="Nome do cliente: " type="text" />
+                        <input id="product" class="input" placeholder="Produto: " type=" text" />
+                    </div>
+                    <div>
+                        <input id="productQuantity" class="input" placeholder="Quantidade: " type="number" />
+                        <input id="productValue" class="input" placeholder="Valor: " type="number" />
+                    </div>
+                    <button class="btn-add" onclick="">Adicionar</button>
+                </form>
+            </section>
         </div>
     </main>
 </body>
 
 <script src="./scripts/totalValueScript.js"></script>
+<script src="./scripts/addNewProduct.js"></script>
 
 </html>
